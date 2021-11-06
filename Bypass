@@ -1,0 +1,13 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Freozzy/AntiHackDelete/main/Skywars", true))()
+wait(1)
+game.workspace.Borders.InvisibleBorder:remove()
+wait(0.1)
+game.workspace.Lobby.KillPlates:remove()
+wait(0.1)
+local BuildPart = Instance.new("Part",game.Workspace)
+BuildPart.Size = Vector3.new(500, 1, 500)
+BuildPart.Position = Vector3.new(25,160,-8)
+BuildPart.Anchored = true
+BuildPart.Name = "AntiFall"
+BuildPart.BrickColor = BrickColor.new("Bright bluish green")
+BuildPart.Material = Enum.Material.SmoothPlastic
