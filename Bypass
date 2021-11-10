@@ -11,7 +11,7 @@ BuildPart.Anchored = true
 BuildPart.Name = "AntiFall"
 BuildPart.BrickColor = BrickColor.new("Bright bluish green")
 BuildPart.Material = Enum.Material.SmoothPlastic
-wait(0.1)
+wait(1)
 local Brick = game.Workspace.AntiFall --Change To Brick
 local speed = 1 --Change to speed you want
 while true do
