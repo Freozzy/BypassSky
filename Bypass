@@ -12,11 +12,11 @@ BuildPart.Name = "AntiFall"
 BuildPart.BrickColor = BrickColor.new("Bright bluish green")
 BuildPart.Material = Enum.Material.SmoothPlastic
 wait(1)
-local Brick = game.Workspace.AntiFall --Change To Brick
-local speed = 1 --Change to speed you want
+local Brick = game.Workspace.AntiFall
+local speed = 1
 while true do
 	for i = 0,1,0.001*speed do
-		Brick.Color = Color3.fromHSV(i,1,1) --creates a color using i
+		Brick.Color = Color3.fromHSV(i,1,1)
 		wait()
 	end
 end
